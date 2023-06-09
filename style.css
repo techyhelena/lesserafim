@@ -1,0 +1,99 @@
+/*  fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+html {
+	font-family: 'Manrope', sans-serif; 
+    color: #FCFCFC; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+
+}
+
+/* calling font files */
+@font-face {
+	font-family: 'Akira Expanded';
+	src: url(fonts/Akira_Expanded_Demo.otf);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    background-color: #101010;
+
+}
+
+.navbar a, .heading {
+    font-family: 'Akira Expanded';
+    color: #FCFCFC;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A60016;
+	cursor: pointer;
+    text-decoration: none;
+}
+
+.heading h2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+	font-size: 4em;
+}
+
+hr {
+    background-color: #FFF;
+    border: none;
+    height: 10px;
+    width: 40em;
+    margin: auto;
+}
+
+.heading {
+    display: grid;
+    padding-top: 5em;
+    grid-template-columns: 2fr 2fr;
+    gap: 2px;
+}
+
+.memberDiv {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2 / span 2;
+	align-items: center;
+}
+
+.headerImg {
+	object-fit: cover;
+}
+
+.nameDiv {
+	grid-template-rows: repeat(5, 1fr);
+}
+
+.nameDiv div {
+    font-size: 2.8rem;
+	grid-area: 1/2/5/-1;
+	margin-left: -1em;
+}
+.memberLink {
+	text-decoration: none;
+	margin: 0;
+}
+
+.bottomLine {
+	position: absolute;
+	margin: 100px auto auto 100px;
+}
+
+
